@@ -1,6 +1,6 @@
 /*!
  * jQuery preload image plugin
- * Original author: zhailin
+ * Original author: schumilin
  */
 
 ; (function ($, window, document, undefined) {

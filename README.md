@@ -5,13 +5,15 @@ Monza 2008
 
 ## Preload Image jQuery Plugin
 
-###version: 0.5
+####Current version: 0.5
  
-###updated: 2013 - 11- 04
+####Last updated: 2013 - 11 - 04
 
-####change log: 
+####Written by: Schumilin
 
-> 改成 jQuery 插件的形式，写法更加人性化。但是在有多个节点处理时写起来比较麻烦。
+####Feature:
+
+> 图片加载完毕后才会显示，可自定义显示方式，或自定义出现动画。
 
 ####Usage:
 ```javascript
