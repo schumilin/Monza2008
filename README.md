@@ -21,35 +21,13 @@ Monza 2008
     });
 ```
 
-property
-value
-default
-example
-fadeIn
-if you need a fade for show
-true
-true || false
-duration
-the duration of the fade
-1s
-'2s' || '2500ms'
-url
-if the node doesn’t has background-image in css
-none
-'http://img.wdjimg.com/ios-landing-page/images/screen.jpg'
-nextImage
-callback function
-none
-[{
-        selector: '.container',
-        fadeIn: true
-}]
-direction
-up down left right
-none
-'left'
-distance
-length (px)
-none
-'300'
+属性|说明|默认值|示例
+---|---|---|---
+fadeIn|是否需要 fadeIn|true|false
+duration|fade 的持续时间|1s|'2500ms' or '5s'
+url|如果该节点的 css 里没有写入背景图片 url，需在此设置|none|'http://img.wdj.com/test.jpg'
+nextImage|加载完毕后才会加载下一张|none|{selector:'.container',fadeIn: true}
+direciton|自定义动画方向，上下左右|none|'left' or 'bottom'
+distance|自定义动画移动距离(px)|none|35
+
 
