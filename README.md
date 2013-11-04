@@ -15,10 +15,20 @@ Monza 2008
 
 ####Usage:
 ```javascript
-    $('.container').preload({
-        fadeIn: false,
-        duration: '500ms'
-    });
+$('.a').preloadImage({
+    duration: '300ms'
+});
+$('.b .c').preloadImage({
+    duration: '800ms',
+    direction: 'right',
+    distance: '30',
+    nextImage: {
+        selector: '.d',
+        url: 'http://img.wdj.com/screen.jpg',
+        fadeIn: false
+    }
+});
+$('.e .f').preloadImage();
 ```
 
 属性|说明|默认值|示例
