@@ -10,7 +10,7 @@
             duration: '1s',
             distance: '50'
         };
-    
+
     function Plugin(element, options) {
         this.element = $(element);
         this.options = $.extend({}, defaults, options);
@@ -25,13 +25,14 @@
 
         img.onload = function () {
             img.onload = null;
-            self.showImage(element, options, img);
+            self.showImage(element, options);
+            delete img;
         };
 
         img.src = imgUrl;
     };
 
-    Plugin.prototype.showImage = function (element, options, img) {
+    Plugin.prototype.showImage = function (element, options) {
             options.url && element.css('background-image', 'url(' + options.url + ')');
             options.direction && element.css(options.direction, '-=' + options.distance);
 
@@ -49,8 +50,6 @@
             } else {
                 element.show();
             }
-
-            delete img;
 
             options.nextImage && $(options.nextImage.selector).preloadImage(options.nextImage);
     };
